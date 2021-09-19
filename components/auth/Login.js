@@ -20,7 +20,7 @@ export default class Login extends Component {
       .auth()
       .signInWithEmailAndPassword(email, password)
       .then((result) => {
-        console.log(result);
+        console.log("Login #23: " + result);
       })
       .then((error) => {
         console.log(error);
