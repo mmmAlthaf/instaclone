@@ -18,15 +18,7 @@ const store = createStore(rootReducer, applyMiddleware(thunk));
 import AddScreen from "./components/main/Add";
 import SaveScreen from "./components/main/Save";
 
-const firebaseConfig = {
-  apiKey: "AIzaSyDyUTKU21Jn5CdAiRPgylI7NBQxam1rkvY",
-  authDomain: "instaproject-9952a.firebaseapp.com",
-  projectId: "instaproject-9952a",
-  storageBucket: "instaproject-9952a.appspot.com",
-  messagingSenderId: "720740282625",
-  appId: "1:720740282625:web:79ac091a8ab19ea1dd6b00",
-  measurementId: "G-D7BVS0B48B",
-};
+
 
 if (firebase.apps.length === 0) {
   firebase.initializeApp(firebaseConfig);
